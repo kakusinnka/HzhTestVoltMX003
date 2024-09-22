@@ -365,6 +365,14 @@
     "keyAliasandwear": "",
     "keyStoreFilePath": "",
     "keyStoreFilePathandwear": "",
+    "kfAppInfo": {
+        "f2cf187c-63fc-4f80-9200-215566ea867f": {
+            "appName": "App 1",
+            "baseId": "7b2f45c4-916d-4062-a9ad-e93c3e89a982",
+            "id": "7b2f45c4-916d-4062-a9ad-e93c3e89a982",
+            "version": "1.0"
+        }
+    },
     "konyVizVersion": "9.5.30",
     "lastmodifiedtime": "1726992993619",
     "location": "false",
