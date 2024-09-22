@@ -120,6 +120,85 @@
             "alertMessagei18n": null,
             "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
             "disabled": null
+        }, {
+            "id": "ADD_MAPPING_fe576455b92b44eaa7eecca268c3e165",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_c744ad5c3f934fc9aee8470bca0aeb61": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_c744ad5c3f934fc9aee8470bca0aeb61",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "responseList",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "HzhServiceJSON",
+                            "type": "integration",
+                            "operationname": "GetJson",
+                            "serviceid": "6e0cb024-98f1-46a9-942b-9d8316ad82e8",
+                            "operationid": "494841"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segGetJson",
+                        "widgetPath": "this.view.segGetJson",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "TestForm001",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "b7e8a1e7cc304cd0860fe54fd6bba346",
+                        "itemKUID": "g815f83f5634483295cdb9f025e0de6c",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_dce86cff04a94116a6058b5c27138492": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_dce86cff04a94116a6058b5c27138492",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "id",
+                        "dataType": "number",
+                        "collectionId": "responseList",
+                        "propertyPath": "[\"responseList\"][0][\"id\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "HzhServiceJSON",
+                            "type": "integration",
+                            "operationname": "GetJson",
+                            "serviceid": "6e0cb024-98f1-46a9-942b-9d8316ad82e8",
+                            "operationid": "494841"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblid",
+                        "widgetPath": "this.view.lblid",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "TestForm001",
+                        "parentMappingId": "ME_Mapping_c744ad5c3f934fc9aee8470bca0aeb61",
+                        "segmentId": "segGetJson",
+                        "segmentKUID": "b7e8a1e7cc304cd0860fe54fd6bba346",
+                        "widgetKUID": "icc93e2eb9cd4bd7b7540a7d3f24736d",
+                        "itemKUID": "g815f83f5634483295cdb9f025e0de6c",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_c744ad5c3f934fc9aee8470bca0aeb61", "ME_Mapping_dce86cff04a94116a6058b5c27138492"],
+            "parentId": "_IF_CONDITION_eb8479025ce04a0bba788874498dc3af",
+            "enableMappingEditor": true
         }]
     }
 }

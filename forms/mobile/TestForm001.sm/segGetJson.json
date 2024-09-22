@@ -1,0 +1,165 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        },
+        {
+            "lblid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Id"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "240dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "responseList",
+        "parentParameters": [],
+        "widgetPropertyName": "rowData"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "ad37d151c6a34a7785b6dd540fad2ac7",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segGetJson",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b7e8a1e7cc304cd0860fe54fd6bba346",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flexFieldsContainer",
+    "pf": "TestForm001",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "ad37d151c6a34a7785b6dd540fad2ac7",
+    "rowcounter": 9,
+    "rowfocusskin": "s3e8e32b07684ff2b96444000a43ab1d",
+    "rowskin": "s4cf21c487bf4660bab7abf9bcf94c20",
+    "rowtemplate": "FBox0d18185989aec4e",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdd4969f8855493980758a6910c6a939",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblid": "lblid"
+    },
+    "zindex": 1
+}

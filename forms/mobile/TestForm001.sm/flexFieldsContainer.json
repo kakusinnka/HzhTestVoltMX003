@@ -40,7 +40,8 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "flexuserId"
+        "flexuserId",
+        "segGetJson"
     ],
     "clipbounds": false,
     "containerweight": 100,
