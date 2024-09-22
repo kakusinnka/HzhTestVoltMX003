@@ -1,0 +1,125 @@
+{
+    "AS_Button_jb5b54f589344781bcee195de41a9268": {
+        "id": "AS_Button_jb5b54f589344781bcee195de41a9268",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "TestForm001",
+            "type": "forms",
+            "platform": null,
+            "KUID": "g815f83f5634483295cdb9f025e0de6c"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "LOADING_INDICATOR_i47921c662d044efb91db0fd3c9fe011",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_ASYNC_SERVICE_bbcaa9273f4d45119c9aab2d2fc174ca",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {
+                "ME_Mapping_b1d3ed42f9f34bc1add0148b61fc0359": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_b1d3ed42f9f34bc1add0148b61fc0359",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "tbxuserId",
+                        "widgetPath": "this.view.tbxuserId",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "TestForm001",
+                        "widgetKUID": "cccf5dc2892a4518ac883534a0a564d7",
+                        "itemKUID": "g815f83f5634483295cdb9f025e0de6c",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "userId",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "HzhServiceJSON",
+                            "type": "integration",
+                            "operationname": "GetJson",
+                            "serviceid": "6e0cb024-98f1-46a9-942b-9d8316ad82e8",
+                            "operationid": "494841"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_b1d3ed42f9f34bc1add0148b61fc0359"],
+            "serviceconfig": {
+                "servicename": "HzhServiceJSON",
+                "type": "integration",
+                "operationname": "GetJson",
+                "serviceid": "6e0cb024-98f1-46a9-942b-9d8316ad82e8",
+                "operationid": "494841"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_g3370d64ccef4171984ea15655bc8071",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_ASYNC_SERVICE_bbcaa9273f4d45119c9aab2d2fc174ca",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_eb8479025ce04a0bba788874498dc3af",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "GetJson.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_ASYNC_SERVICE_bbcaa9273f4d45119c9aab2d2fc174ca",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_jf74297037a24383ae2017db8c84c70c",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_ASYNC_SERVICE_bbcaa9273f4d45119c9aab2d2fc174ca",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_g42cd47112004f3f8d081eea0f1364c6",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Data fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_jf74297037a24383ae2017db8c84c70c",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

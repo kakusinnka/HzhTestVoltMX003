@@ -32,7 +32,11 @@
         }
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "flexHeader",
+        "flexFieldsContainer",
+        "flexFooter"
+    ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
